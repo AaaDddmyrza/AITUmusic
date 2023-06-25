@@ -11,12 +11,14 @@ var currentAudio = null;
 
     if (audio.paused) {
       audio.play();
-      button.textContent = "Pause";
+      button.classList.remove("fa-play");
+      button.classList.add("fa-pause");
       currentAudio = audio;
     } else {
       audio.pause();
       audio.currentTime = 0;
-      button.textContent = "Play";
+      button.classList.remove("fa-pause");
+      button.classList.add("fa-play");
       currentAudio = null;
     }
   }
