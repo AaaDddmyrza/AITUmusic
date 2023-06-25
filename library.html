@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> AITU ムジク </title>
+    <link rel="stylesheet" href="style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="style/scrollBAR.css" type="text/css">
+    <link rel="stylesheet" href="style/cssFonts/fontConsolas.css" type="text/css">
+    <link rel="icon" href="favicon/aboutPAGE.png" type="image/png">
+    <script type="text/javascript" src="script/currentTime.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="/fontawesome-free-6.4.0-web/webfonts/fa-solid-900.ttf" rel="stylesheet">
+    <link href="/fontawesome-free-6.4.0-web/webfonts/fa-regular-400.ttf" rel="stylesheet">
+    <link href="/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.ttf" rel="stylesheet">
+    <script type="text/javascript" src="script/mouseEvent.js"> </script>
+    <script type="text/javascript" src="script/playaudio.js"> </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="audio/warning.wav"> </audio>
+    <audio id="audioERR01" src="audio/error.wav"> </audio>
+</audioFiles>
+
+<body class="bg-mycolor">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38360ee787.js" crossorigin="anonymous"></script>
+    <div class="headMENU">
+        <nav class="navbar bg-mycolorbar">
+            <div class="container-fluid justify-content-start">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="border-radius: 30%/30%; height: 29px; width: 29px; display: flex; justify-content: center; align-items: center;">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="myLinks" class="links-container"> 
+                <a href="login.html"  class="btn btn-mycolorbarv sicked"> <i class="fa-solid fa-user" style="color:aliceblue"></i> </a>
+                <a href="javascript:alert('[ i ]  you are currently on this subpage !!')" class="active, btn btn-mycolorbar sicked"><i class="fa-solid fa-house" style="color:aliceblue"></i></a>
+                <a href="index.html" class="btn btn-mycolorbar sicked" title=">> funSTUFF"><i class="fa-solid fa-earth-americas" style="color:aliceblue"></i></a>
+              <audio style="height: 25px; margin-top: 10px; margin-left: 15px;" id="audio-player" src="music/02_TopBrazil_Benny_Benassi_vs_Constantin_&_MazZz_Dub_Mix.flac" controls autoplay></audio>
+             <!-- <button class="btn btn-mycolorbar" onclick="document.getElementById('audio-player').play()">Play</button>
+              <button class="btn btn-mycolorbar" onclick="document.getElementById('audio-player').pause()">Pause</button>
+            -->
+                </div>
+            </div>
+            <div class="headSubMENU" title="[ i ] liveSTATUS">
+                <div class="headSubMENU headSubMenuGRAD">
+                    <span class="fixed_lol"><p onclick="audioWARN();" id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                    <p class="headMENUarrow"> &lt;&lt; Browse --  </p></span>
+                    <p class="headSubTXTscroll01" style="opacity: 0%;"> Listen new music in our website!!! </p>
+                    <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> AITU is the best university </p>
+                    <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> LOL </p>
+                    <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                        AITU moment
+                        AITU moment
+                        AITU moment
+                        AITU moment
+                        AITU moment
+                     </p>
+                 </div>
+             </div>
+        </nav>  
+        <a href="" class="logo"> <img src="imgs/aitumusic.png" alt="[9] certifiedBAKA" width="200px" height="35px" title="AITU ムジク"> </a>
+    </div>
+        <div id="postsBOX" style="margin-top: 70px; opacity: 0;">
+        <div class="textBORDER" style="float:left"></div>
+        </div>
+        <div class="borderLINE" style="float: left; height: 75%;"> </div>
+        <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px;"></p>  
+        <span class="mediaPOST"> <br>
+            <h1 style="color:azure;"> <i class="fa-solid fa-list" style="color: #1e5ad2;"></i> Library</h1> <br>
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col ">
+                        <a href="https://music.apple.com/library/albums/l.xQJDrn6"> 
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a> 
+                        <p class="lol">Dreamland</p>
+                        <p class="lol"><strong>Heat waves</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/album/metamorphosis-single/1610017668"> 
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/f8/11/27/f8112775-b320-2f77-b5de-a2d2139c0237/689690360221.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a> 
+                        <p class="lol">Interworld</p>
+                        <p class="lol"><strong>Metamorphosis</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/library/albums/l.zSwcIZ8"> 
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/42/a3/cc/42a3cc35-fdb7-2ae7-02f3-e5a90f32eb8e/22UMGIM74128.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a> 
+                        <p class="lol">Ado</p>
+                        <p class="lol"><strong>UTA'S SONGS</strong></p>
+                        <p class="lol"><strong>ONE PIECE FILM RED</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://music.apple.com/library/albums/l.HErhQyz"> 
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/14/f9/47/14f947df-7650-dea0-a57b-15fce3eb53cb/190296654176.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a> 
+                        <p class="lol">Morgenshtern</p>
+                        <p class="lol"><strong>MILLION DOLLAR: BUSINESS</strong></p>
+                        </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/library/albums/l.nxwcbSf"> 
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/5f/a2/525fa2bb-a85f-2ab7-ac9b-bcbaeb1d1740/190296669415.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a> 
+                        <p class="lol">Morgenshtern</p>
+                        <p class="lol"><strong>MILLION DOLLAR: HAPPINESS</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.qbWQwAp?l=en-GB">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/1a/e2/74/1ae2740f-eacb-19b8-0c0a-fab4ce391052/0602448736116_Cover.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">RADWIMPS</p>
+                        <p class="lol"><strong>SUZUME</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.kemfc4v?l=en-GB">
+                            <img src="https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">The Weekend</p>
+                        <p class="lol"><strong>After Hours</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.BRznLwp?l=en-GB">
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music4/v4/fd/98/4f/fd984f46-c674-87b5-718c-11175b2dfa70/Chief_Keef_Front_Cover.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">Chief Keef</p>
+                        <p class="lol"><strong>Young & Flexin</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.xy2hl71?l=en-GB">
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/d2/a6/c6/d2a6c6b5-ff40-52ad-5dac-67dad5d9ddd0/17UM1IM64707.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">Migos</p>
+                        <p class="lol"><strong>Culture II</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.yUBAX03?l=en-GB">
+                            <img src="https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/f2/0d/8b/f20d8bff-a927-ae98-6784-20a1f51cb23e/16UMGIM27642.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">Drake</p>
+                        <p class="lol"><strong>Views</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.Tb2pHwz?l=en-GB">
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/87/ed/7e/87ed7e76-be2c-e4d9-3d60-bc15a7d90f0f/cover.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">JILLZAY</p>
+                        <p class="lol"><strong>718 Jungle</strong></p>
+                    </div>
+                    <div class="col">
+                        <a href="https://music.apple.com/kz/library/albums/l.cx6qkal?l=en-GB">
+                            <img src="https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/c5/40/9e/c5409e27-3f5d-9476-241d-ed8e7499ea38/19UMGIM20677.rgb.jpg/316x316bb.webp" class="mediaROUNDED">
+                        </a>
+                        <p class="lol">Duncan Laurence</p>
+                        <p class="lol"><strong>Arcade</strong></p>
+                    </div>
+                </div>
+            </div>
+        </span>
+</body>
+</html>
